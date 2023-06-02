@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://pelota/icon.png" type="Texture" id=1]
+
+[node name="Pelota" type="RigidBody2D"]
+
+[node name="pelota" type="Sprite" parent="."]
+position = Vector2( 113, -42 )
+texture = ExtResource( 1 )
