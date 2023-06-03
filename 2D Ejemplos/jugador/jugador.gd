@@ -9,8 +9,8 @@ export var speed : int = 5
 # warning-ignore:unused_argument
 func _physics_process(delta):
 	if Input.is_action_pressed("mover_derecha"):
-		position.x = position.x + speed
+		var mouvement : Vector2 = Vector2(speed,0)
+		move_and_collide(mouvement)
 	if Input.is_action_pressed("mover_izquierda"):
-		position.x = position.x - speed
-
-
+		var mouvement : Vector2 = Vector2(-speed,0)
+		move_and_collide(mouvement)
