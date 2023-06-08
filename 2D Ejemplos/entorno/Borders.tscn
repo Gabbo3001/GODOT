@@ -25,3 +25,9 @@ shape = SubResource( 1 )
 [node name="Col_border_top" type="CollisionShape2D" parent="borde_top"]
 position = Vector2( 214.5, -10.75 )
 shape = SubResource( 2 )
+
+[node name="borde_bot" type="StaticBody2D" parent="."]
+
+[node name="Col_border_bot" type="CollisionShape2D" parent="borde_bot"]
+position = Vector2( 218, 727 )
+shape = SubResource( 2 )

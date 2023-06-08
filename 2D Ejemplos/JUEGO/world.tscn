@@ -11,16 +11,15 @@ bounce = 1.0
 
 [node name="world" type="Node2D"]
 
-[node name="Borders" parent="." instance=ExtResource( 4 )]
-
 [node name="Entorno" parent="." instance=ExtResource( 3 )]
+
+[node name="Borders2" parent="Entorno" instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 201, 692 )
 
 [node name="Pelota" parent="." instance=ExtResource( 1 )]
-position = Vector2( -6, -213 )
+position = Vector2( 1, 81 )
 physics_material_override = SubResource( 1 )
 gravity_scale = 0.0
-linear_velocity = Vector2( 50, -200 )
 linear_damp = 0.0
