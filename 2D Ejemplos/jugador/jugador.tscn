@@ -4,7 +4,7 @@
 [ext_resource path="res://jugador/jugador.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 312.11, 48.7742 )
+extents = Vector2( 196.629, 43.5484 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 199, 415 )
@@ -12,11 +12,11 @@ script = ExtResource( 2 )
 speed = 8
 
 [node name="BarraPlayer" type="Sprite" parent="."]
-position = Vector2( 1.00001, 2 )
-scale = Vector2( 0.3204, 0.287037 )
+position = Vector2( 37.5625, 3.25 )
+scale = Vector2( 0.2034, 0.263889 )
 texture = ExtResource( 1 )
 
 [node name="CollisionPlayer" type="CollisionShape2D" parent="."]
-position = Vector2( -1.52588e-05, 2 )
+position = Vector2( 37, 3.5 )
 scale = Vector2( 0.3204, 0.287037 )
 shape = SubResource( 1 )

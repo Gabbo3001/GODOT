@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://pelota/Pelota.tscn" type="PackedScene" id=1]
 [ext_resource path="res://jugador/jugador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://entorno/Entorno.tscn" type="PackedScene" id=3]
 [ext_resource path="res://entorno/Borders.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entorno/stage_blocks.tscn" type="PackedScene" id=5]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -22,4 +23,8 @@ position = Vector2( 201, 692 )
 position = Vector2( 1, 81 )
 physics_material_override = SubResource( 1 )
 gravity_scale = 0.0
+contacts_reported = 1
+contact_monitor = true
 linear_damp = 0.0
+
+[node name="stage_blocks" parent="." instance=ExtResource( 5 )]
