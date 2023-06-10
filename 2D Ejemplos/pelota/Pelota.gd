@@ -3,7 +3,7 @@ var game_started : bool = false
 func _input(event):
 	if game_started == false:
 		if event.is_action_pressed("iniciar"):
-			linear_velocity = Vector2(50,-200)
+			linear_velocity = Vector2(40,-500)
 			game_started = true
 
 func _ready():
@@ -19,4 +19,6 @@ func _physics_process(delta):
 		elif body.get_name() == "borde_bot":
 			print("PIERDE")
 			queue_free()
-	pass
+			var replay_scene = load("res://Titulos/Titulo/REPLAY.tscn")
+			get_parent().add_child(replay_scene.instance())
+			get_tree().paused = true

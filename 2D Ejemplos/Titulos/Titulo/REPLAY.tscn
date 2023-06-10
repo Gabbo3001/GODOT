@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Titulos/Titulo/botonReplay.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Titulos/Titulo/mainTitle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Titulos/Titulo/botonSalir.tscn" type="PackedScene" id=4]
+
+[node name="REPLAY" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0156863, 0.0196078, 0.160784, 0.513726 )
+
+[node name="titleMargin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 150.0
+margin_right = -40.0
+margin_bottom = -100.0
+
+[node name="menu" type="VBoxContainer" parent="titleMargin"]
+margin_right = 359.0
+margin_bottom = 470.0
+
+[node name="mainTitle" parent="titleMargin/menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_right = 359.0
+
+[node name="botonReplay" parent="titleMargin/menu" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 167.0
+margin_right = 359.0
+margin_bottom = 246.0
+
+[node name="botonsALIR" parent="titleMargin/menu" instance=ExtResource( 4 )]
+anchor_right = 0.0
+margin_top = 250.0
+margin_right = 359.0
+margin_bottom = 329.0

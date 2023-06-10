@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Titulos/Titulo/botonPlay.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entorno/fondo1.jpeg" type="Texture" id=2]
+[ext_resource path="res://Titulos/Titulo/botonSalir.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Titulos/Titulo/mainTitle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Titulos/Titulo/TITULOInicial.gd" type="Script" id=5]
+
+[node name="tituloInicial" type="Node"]
+script = ExtResource( 5 )
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 45.0
+margin_bottom = 122.0
+texture = ExtResource( 2 )
+
+[node name="titleMargin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 150.0
+margin_right = -40.0
+margin_bottom = -100.0
+
+[node name="menu" type="VBoxContainer" parent="titleMargin"]
+margin_right = 359.0
+margin_bottom = 470.0
+
+[node name="mainTitle" parent="titleMargin/menu" instance=ExtResource( 4 )]
+anchor_right = 0.0
+margin_right = 359.0
+
+[node name="botonPlay" parent="titleMargin/menu" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 167.0
+margin_right = 359.0
+margin_bottom = 246.0
+
+[node name="bot" parent="titleMargin/menu/botonPlay" index="0"]
+margin_left = 92.0
+margin_right = 266.0
+
+[node name="botonsALIR" parent="titleMargin/menu" instance=ExtResource( 3 )]
+anchor_right = 0.0
+margin_top = 250.0
+margin_right = 359.0
+margin_bottom = 329.0
+
+[connection signal="pressed" from="titleMargin/menu/botonPlay/bot" to="." method="_on_START_bot_pressed"]
+
+[editable path="titleMargin/menu/botonPlay"]

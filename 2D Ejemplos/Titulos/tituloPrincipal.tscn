@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="tituloPrincipal" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_bottom = 720.0
+stretch_mode = 4
