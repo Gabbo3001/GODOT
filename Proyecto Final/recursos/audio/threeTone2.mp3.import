@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/threeTone2.mp3-76260f12304c036710104c847678f760.mp3str"
+
+[deps]
+
+source_file="res://recursos/audio/threeTone2.mp3"
+dest_files=[ "res://.import/threeTone2.mp3-76260f12304c036710104c847678f760.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

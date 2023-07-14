@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ganar.ogg-67aa04e5c16a749af36ecead70841f71.oggstr"
+
+[deps]
+
+source_file="res://recursos/audio/ganar.ogg"
+dest_files=[ "res://.import/ganar.ogg-67aa04e5c16a749af36ecead70841f71.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
