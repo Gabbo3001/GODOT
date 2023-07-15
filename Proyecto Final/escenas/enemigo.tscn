@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://recursos/enemigo.png" type="Texture" id=1]
-[ext_resource path="res://escenas/enemigo.gd" type="Script" id=2]
+[ext_resource path="res://escenas/scripts/enemigo.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 13.9073
@@ -77,13 +77,12 @@ script = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 18 )
 rotation = -1.56058
-scale = Vector2( 1, 1 )
 shape = SubResource( 12 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 11 )
 animation = "izquierda"
-frame = 1
+frame = 4
 playing = true
 
 [node name="RayCastDown" type="RayCast2D" parent="."]

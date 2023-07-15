@@ -20,7 +20,7 @@ shape = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="pickupSound" type="AudioStreamPlayer" parent="."]
+[node name="recogerMoneda" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_moneda_body_entered"]

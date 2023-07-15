@@ -163,14 +163,18 @@ position = Vector2( 608, 32 )
 [node name="moneda15" parent="monedas" instance=ExtResource( 3 )]
 position = Vector2( 672, 32 )
 
-[node name="enemigo" parent="." instance=ExtResource( 7 )]
+[node name="enemigos" type="Node2D" parent="."]
+
+[node name="enemigo" parent="enemigos" groups=["enemigos"] instance=ExtResource( 7 )]
 position = Vector2( 736, 336 )
 
-[node name="enemigo2" parent="." instance=ExtResource( 7 )]
+[node name="enemigo2" parent="enemigos" groups=["enemigos"] instance=ExtResource( 7 )]
 position = Vector2( 224, 264 )
 
-[node name="enemigo3" parent="." instance=ExtResource( 7 )]
+[node name="enemigo3" parent="enemigos" groups=["enemigos"] instance=ExtResource( 7 )]
 position = Vector2( 608, 72 )
 
-[node name="enemigo4" parent="." instance=ExtResource( 7 )]
+[node name="enemigo4" parent="enemigos" groups=["enemigos"] instance=ExtResource( 7 )]
 position = Vector2( 352, 584 )
+
+[editable path="personaje"]
