@@ -7,6 +7,5 @@ func _ready():
 func _on_moneda_body_entered(body):
 	print(typeof(body))
 	if not body.is_in_group("enemigos"):
-		recogerMoneda.play()
 		queue_free()
 		print("pickup")
